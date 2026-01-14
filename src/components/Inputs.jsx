@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './annimation.css';
 
 export function Inputs({ onAddExpenses }) {
 
@@ -57,7 +58,7 @@ export function Inputs({ onAddExpenses }) {
         />
 
         <div className="flex-1 text-center">
-          <button className="text-[15px] font-semibold text-white cursor-pointer py-3 px-8 rounded-4xl bg-[rgba(70,132,232)]"
+          <button className="btn-add text-[15px] font-semibold text-white cursor-pointer py-3 px-8 rounded-4xl bg-[rgba(70,132,232)]"
             onClick={handleAdd}
           >Add Expense</button>
         </div>

@@ -1,0 +1,8 @@
+.btn-add, .btn-edit, .btn-save {
+  transition: transform 0.5s ease 0s;
+}
+
+.btn-add:hover, .btn-edit:hover, .btn-save:hover {
+  transform: translateY(-5px);
+}
+

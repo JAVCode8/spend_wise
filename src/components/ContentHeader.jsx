@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './annimation.css';
 
 export function ContentHeader({ total, budget, setBudget }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -18,7 +19,7 @@ export function ContentHeader({ total, budget, setBudget }) {
             />
             <button 
               onClick={() => setIsEditing(false)}
-              className="bg-[#05a084] hover:bg-[#048a72] text-white py-2 px-10 rounded-lg font-bold transition-colors cursor-pointer"
+              className="btn-save bg-[#05a084] hover:bg-[#048a72] mt-5 text-white py-2 px-10 rounded-lg font-bold transition-colors cursor-pointer"
             >
               Save & Close
             </button>
@@ -31,7 +32,7 @@ export function ContentHeader({ total, budget, setBudget }) {
             <div className="pb-2">
               <button 
                 onClick={() => setIsEditing(true)}
-                className="bg-[#05a084] hover:bg-[#048a72] text-[17px] font-semibold cursor-pointer rounded-lg text-white py-2 px-9 transition-colors shadow-md"
+                className="btn-edit bg-[#05a084] hover:bg-[#048a72] text-[17px] font-semibold cursor-pointer rounded-lg text-white py-2 px-9 transition-colors shadow-md"
               >
                 Edit Starting Balance
               </button>
